@@ -21,7 +21,8 @@ This solution is a workaround for that problem for the people that want to have 
 I had to make this script because the antivirus of the company where I work detects AHKv1 as a threat but not v2... So I did my best, a bit haphazardly, to adapt swinogrodzki's great work to make it usable in my workplace.
 
 You can add missing codes by hand:
-alt_code_map[“VAL_255”] := “U+00A0”
+
+    alt_code_map[“VAL_255”] := “U+00A0”
 
 VAL = [Numpad numbers](https://www.alt-codes.net/)
 U+xxx = [Unicode *thing*](https://www.compart.com/en/unicode/block/U+2300)
