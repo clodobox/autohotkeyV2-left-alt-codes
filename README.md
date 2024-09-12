@@ -1,5 +1,5 @@
-# autohotkey-left-alt-codes
-## AutoHotKey Left Alt Codes Script
+# autohotkeyV2-left-alt-codes
+## AutoHotKey V2.0 Left Alt Codes Script
 This is a fork of swinogrodzki's script “autohotkey-left-alt-codes” modified to be functional with AutoHotKey V2
 
 ## Requirements
