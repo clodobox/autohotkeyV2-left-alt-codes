@@ -1,9 +1,9 @@
 # autohotkey-left-alt-codes
 ## AutoHotKey Left Alt Codes Script
-A script for the AutoHotKey 1.1 that simulates the left alt behavior with an external numpad.
+This is a fork of swinogrodzki's script “autohotkey-left-alt-codes” modified to be functional with AutoHotKey V2
 
 ## Requirements
-[AutoHotKey](https://www.autohotkey.com/) v1.1.33.02 or higher.
+[AutoHotKey](https://www.autohotkey.com/) v2.0 or higher.
 
 ## Description
 Why is it needed? Please see the following resource that explains it.
@@ -12,7 +12,19 @@ Why is it needed? Please see the following resource that explains it.
 
 [AutoHotKey Documentation](https://www.autohotkey.com/docs/v1/)
 
-[AutoHotKey 1.1 Downloads](https://www.autohotkey.com/download/1.1/)
+[AutoHotKey Downloads](https://www.autohotkey.com/download/)
 
 When connecting an external USB or bluetooth numpad to your Windows PC it loses the left-alt-codes functionality. It is caused by the very nature of how the input devices work.
 This solution is a workaround for that problem for the people that want to have both an external numpad and still functional left alt codes.
+
+## Other
+I had to make this script because the antivirus of the company where I work detects AHKv1 as a threat but not v2... So I did my best, a bit haphazardly, to adapt swinogrodzki's great work to make it usable in my workplace.
+
+You can add missing codes by hand:
+alt_code_map[“VAL_255”] := “U+00A0”
+
+VAL = [Numpad numbers](https://www.alt-codes.net/)
+U+xxx = [Unicode *thing*](https://www.compart.com/en/unicode/block/U+2300)
+
+If anyone has a mega list of ALT codes and unicode *things*, I'll adapt it!
+I had a few problems with alt+tab but they're normally solved.
